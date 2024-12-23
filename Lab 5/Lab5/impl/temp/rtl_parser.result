@@ -1,0 +1,20 @@
+[
+ {
+  "InstFile" : "/Users/alexivanov/Documents/GOWIN/Lab5/Lab5/src/top.v",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "/Users/alexivanov/Documents/GOWIN/Lab5/Lab5/src/top.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "/Users/alexivanov/Documents/GOWIN/Lab5/Lab5/src/top.v",
+    "InstLine" : 94,
+    "InstName" : "shifter_instance",
+    "ModuleFile" : "/Users/alexivanov/Documents/GOWIN/Lab5/Lab5/src/shifter.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "shifter"
+   }
+  ]
+ }
+]

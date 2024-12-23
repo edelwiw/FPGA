@@ -1,0 +1,14 @@
+-d /Users/alexivanov/Documents/GOWIN/Lab5/Lab5/impl/gwsynthesis/Lab5.vg
+-p GW2A-18C-PBGA256-8
+-pn GW2A-LV18PG256C8/I7
+-cst /Users/alexivanov/Documents/GOWIN/Lab5/Lab5/src/Lab5.cst
+-cfg /Users/alexivanov/Documents/GOWIN/Lab5/Lab5/impl/pnr/device.cfg
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-convert_sdp32_36_to_sdp16_18
+-correct_hold 1
+-route_maxfan 23
+-global_freq 100.000

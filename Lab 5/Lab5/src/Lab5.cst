@@ -1,0 +1,17 @@
+//Copyright (C)2014-2024 Gowin Semiconductor Corporation.
+//All rights reserved. 
+//File Title: Physical Constraints file
+//Tool Version: V1.9.10.03 (64-bit)
+//Part Number: GW2A-LV18PG256C8/I7
+//Device: GW2A-18
+//Device Version: C
+//Created Time: Thu 11 28 11:59:46 2024
+
+IO_LOC "latch" P9;
+IO_PORT "latch" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "clk_out" T9;
+IO_PORT "clk_out" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "data_out" T7;
+IO_PORT "data_out" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "clk" H11;
+IO_PORT "clk" IO_TYPE=LVCMOS18 PULL_MODE=UP BANK_VCCIO=1.8;
