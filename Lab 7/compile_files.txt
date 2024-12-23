@@ -1,0 +1,2 @@
+Lab 7/src/top.v 
+Lab 7/src/spi_master.v

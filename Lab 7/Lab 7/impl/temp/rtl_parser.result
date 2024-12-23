@@ -1,0 +1,20 @@
+[
+ {
+  "InstFile" : "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/top.v",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/top.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/top.v",
+    "InstLine" : 42,
+    "InstName" : "spi_master_inst",
+    "ModuleFile" : "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/spi_master.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "spi_master"
+   }
+  ]
+ }
+]

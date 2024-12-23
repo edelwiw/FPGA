@@ -1,0 +1,29 @@
+Reading netlist file: "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/impl/gwsynthesis/Lab 7.vg"
+Parsing netlist file "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/impl/gwsynthesis/Lab 7.vg" completed
+Processing netlist completed
+Reading constraint file: "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/Lab 7.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/impl/pnr/Lab 7.power.html" completed
+Generate file "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/impl/pnr/Lab 7.pin.html" completed
+Generate file "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/impl/pnr/Lab 7.rpt.html" completed
+Generate file "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/impl/pnr/Lab 7.rpt.txt" completed
+Generate file "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/impl/pnr/Lab 7.tr.html" completed
+Mon Dec 23 02:10:13 2024
+

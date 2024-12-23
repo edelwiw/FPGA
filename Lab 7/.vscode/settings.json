@@ -1,0 +1,12 @@
+{
+	"verilog.icarusBuildDirectory": "out",
+	"verilog.icarusCompileArguments": "-c compile_files.txt -lprim_sim.v",
+	"VsCodeTaskButtons.tasks": [
+		{
+            "label": "$(window) GTK-wave",
+            "task": "Run GTK-wave",
+            "tooltip": "View wave"
+        },
+	]
+
+}
