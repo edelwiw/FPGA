@@ -1,0 +1,14 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\users\crossover\Documents\GOWIN\Lab5\Lab5\src\shifter.v'
+Analyzing Verilog file 'C:\users\crossover\Documents\GOWIN\Lab5\Lab5\src\top.v'
+Compiling module 'top'("C:\users\crossover\Documents\GOWIN\Lab5\Lab5\src\top.v":1)
+Extracting RAM for identifier 'digits'("C:\users\crossover\Documents\GOWIN\Lab5\Lab5\src\top.v":55)
+WARN  (EX3780) : Using initial value of 'start_transfer' since it is never assigned("C:\users\crossover\Documents\GOWIN\Lab5\Lab5\src\top.v":83)
+WARN  (EX3780) : Using initial value of 'start_transfer' since it is never assigned("C:\users\crossover\Documents\GOWIN\Lab5\Lab5\src\top.v":129)
+Compiling module 'shifter'("C:\users\crossover\Documents\GOWIN\Lab5\Lab5\src\shifter.v":1)
+WARN  (EX3791) : Expression size 6 truncated to fit in target size 5("C:\users\crossover\Documents\GOWIN\Lab5\Lab5\src\shifter.v":41)
+ERROR (EX3833) : If-condition does not match any sensitivity list edge("C:\users\crossover\Documents\GOWIN\Lab5\Lab5\src\top.v":133)
+ERROR (EX3534) : Assignment under multiple clock edges is not supported for synthesis("C:\users\crossover\Documents\GOWIN\Lab5\Lab5\src\top.v":138)
+Module 'top' remains a black box due to errors in its contents("C:\users\crossover\Documents\GOWIN\Lab5\Lab5\src\top.v":1)
+GowinSynthesis finish

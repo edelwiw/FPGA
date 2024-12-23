@@ -1,0 +1,28 @@
+[
+ {
+  "InstFile" : "C:/users/crossover/Documents/GOWIN/Lab6/Lab6/src/top.v",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "C:/users/crossover/Documents/GOWIN/Lab6/Lab6/src/top.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/users/crossover/Documents/GOWIN/Lab6/Lab6/src/top.v",
+    "InstLine" : 101,
+    "InstName" : "uart_instance",
+    "ModuleFile" : "C:/users/crossover/Documents/GOWIN/Lab6/Lab6/src/uart.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "uart"
+   },
+   {
+    "InstFile" : "C:/users/crossover/Documents/GOWIN/Lab6/Lab6/src/top.v",
+    "InstLine" : 112,
+    "InstName" : "shifter_instance",
+    "ModuleFile" : "C:/users/crossover/Documents/GOWIN/Lab6/Lab6/src/shifter.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "shifter"
+   }
+  ]
+ }
+]

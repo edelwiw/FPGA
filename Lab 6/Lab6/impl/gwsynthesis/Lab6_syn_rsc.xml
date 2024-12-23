@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" Register="169" Alu="146" Lut="1152" MULT9X9="1" MULT18X18="3" MULTALU36X18="2" T_Register="215(169)" T_Alu="158(146)" T_Lut="1195(1152)" T_MULT9X9="1(1)" T_MULT18X18="3(3)" T_MULTALU36X18="2(2)">
+ <SubModule name="uart_instance" Register="38" Alu="12" Lut="25" T_Register="38(38)" T_Alu="12(12)" T_Lut="25(25)"/>
+ <SubModule name="shifter_instance" Register="8" Lut="18" T_Register="8(8)" T_Lut="18(18)"/>
+</Module>

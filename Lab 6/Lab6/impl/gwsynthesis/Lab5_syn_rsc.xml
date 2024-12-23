@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" Register="155" Alu="81" Lut="990" T_Register="163(155)" T_Alu="81(81)" T_Lut="1008(990)">
+ <SubModule name="shifter_instance" Register="8" Lut="18" T_Register="8(8)" T_Lut="18(18)"/>
+</Module>
