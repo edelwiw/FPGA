@@ -1,0 +1,15 @@
+**** module/scope: full_add_3b
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: full_add_3b.add1
+     Flip-Flops   : 0
+     Logic Gates  : 5
+**** module/scope: full_add_3b.add2
+     Flip-Flops   : 0
+     Logic Gates  : 5
+**** module/scope: full_add_3b.add3
+     Flip-Flops   : 0
+     Logic Gates  : 5
+**** TOTALS
+     Flip-Flops   : 0
+     Logic Gates  : 15
