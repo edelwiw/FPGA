@@ -1,0 +1,28 @@
+**** module/scope: part_4_top_tb
+     Flip-Flops   : 0
+     Logic Gates  : 0
+     LOG[13]: 1 unaccounted
+     LOG[14]: 1 unaccounted
+**** module/scope: part_4_top_tb.top0
+     Flip-Flops   : 0
+     Logic Gates  : 32
+     MUX[2]: 16 slices
+**** module/scope: part_4_top_tb.top0.add16_1
+     Flip-Flops   : 0
+     Logic Gates  : 68
+     ADDER[17]: 2 units
+**** module/scope: part_4_top_tb.top0.add16_2
+     Flip-Flops   : 0
+     Logic Gates  : 68
+     ADDER[17]: 2 units
+**** module/scope: part_4_top_tb.top0.add16_3
+     Flip-Flops   : 0
+     Logic Gates  : 68
+     ADDER[17]: 2 units
+**** TOTALS
+     Flip-Flops   : 0
+     Logic Gates  : 236
+     ADDER[17]: 6 units
+     MUX[2]: 16 slices
+     LOG[13]: 1 unaccounted
+     LOG[14]: 1 unaccounted
