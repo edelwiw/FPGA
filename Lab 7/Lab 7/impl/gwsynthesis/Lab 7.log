@@ -3,13 +3,13 @@ Running parser ...
 Analyzing Verilog file '/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/spi_master.v'
 Analyzing Verilog file '/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/top.v'
 Compiling module 'top'("/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/top.v":1)
-WARN  (EX3780) : Using initial value of 'start_transfer' since it is never assigned("/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/top.v":27)
-WARN  (EX3780) : Using initial value of 'data_reg' since it is never assigned("/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/top.v":34)
 Compiling module 'spi_master(SPI_CLOCK_FREQ=100000)'("/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/spi_master.v":1)
-WARN  (EX2420) : Latch inferred for net 'current_bit_sample'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/spi_master.v":74)
+WARN  (EX2420) : Latch inferred for net 'spi_mosi'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/spi_master.v":69)
+WARN  (EX2420) : Latch inferred for net 'current_bit_sample'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/spi_master.v":80)
+WARN  (EX2420) : Latch inferred for net 'input_register[0]'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/spi_master.v":94)
 NOTE  (EX0101) : Current top module is "top"
-WARN  (EX0211) : The output port "spi_ss" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/top.v":5)
 [5%] Running netlist conversion ...
+WARN  (CV0016) : Input spi_miso is unused("/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/top.v":4)
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed
 [15%] Optimizing Phase 1 completed
@@ -22,10 +22,11 @@ Running inference ...
 Running technical mapping ...
 [60%] Tech-Mapping Phase 0 completed
 [65%] Tech-Mapping Phase 1 completed
+WARN  (DI0003) : Latch inferred for net 'current_bit_sample';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/spi_master.v":80)
+WARN  (DI0003) : Latch inferred for net 'spi_mosi';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/spi_master.v":69)
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
-WARN  (NL0002) : The module "spi_master" instantiated to "spi_master_inst" is swept in optimizing("/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/top.v":48)
 [95%] Generate netlist file "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/impl/gwsynthesis/Lab 7.vg" completed
 [100%] Generate report file "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/impl/gwsynthesis/Lab 7_syn.rpt.html" completed
 GowinSynthesis finish

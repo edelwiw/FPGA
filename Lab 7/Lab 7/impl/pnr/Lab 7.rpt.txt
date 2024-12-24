@@ -12,27 +12,27 @@
   <Part Number>: GW2A-LV18PG256C8/I7
   <Device>: GW2A-18
   <Device Version>: C
-  <Created Time>:Mon Dec 23 02:10:13 2024
+  <Created Time>:Tue Dec 24 08:44:34 2024
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 0.001s, Elapsed time = 0h 0m 0.001s
-    Placement Phase 1: CPU time = 0h 0m 0.091s, Elapsed time = 0h 0m 0.088s
-    Placement Phase 2: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Placement Phase 3: CPU time = 0h 0m 0.26s, Elapsed time = 0h 0m 0.253s
-    Total Placement: CPU time = 0h 0m 0.352s, Elapsed time = 0h 0m 0.342s
+    Placement Phase 0: CPU time = 0h 0m 0.007s, Elapsed time = 0h 0m 0.003s
+    Placement Phase 1: CPU time = 0h 0m 0.097s, Elapsed time = 0h 0m 0.091s
+    Placement Phase 2: CPU time = 0h 0m 0.001s, Elapsed time = 0h 0m 0.001s
+    Placement Phase 3: CPU time = 0h 0m 0.268s, Elapsed time = 0h 0m 0.259s
+    Total Placement: CPU time = 0h 0m 0.373s, Elapsed time = 0h 0m 0.354s
  Running routing:
     Routing Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Routing Phase 1: CPU time = 0h 0m 0.046s, Elapsed time = 0h 0m 0.051s
-    Routing Phase 2: CPU time = 0h 0m 0.043s, Elapsed time = 0h 0m 0.035s
+    Routing Phase 1: CPU time = 0h 0m 0.049s, Elapsed time = 0h 0m 0.048s
+    Routing Phase 2: CPU time = 0h 0m 0.064s, Elapsed time = 0h 0m 0.054s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 0.089s, Elapsed time = 0h 0m 0.086s
+    Total Routing: CPU time = 0h 0m 0.113s, Elapsed time = 0h 0m 0.102s
  Generate output files:
-    CPU time = 0h 0m 0.376s, Elapsed time = 0h 0m 0.374s
+    CPU time = 0h 0m 0.376s, Elapsed time = 0h 0m 0.38s
 
- Total Time and Memory Usage: CPU time = 0h 0m 0.817s, Elapsed time = 0h 0m 0.802s, Peak memory usage = 494MB
+ Total Time and Memory Usage: CPU time = 0h 0m 0.862s, Elapsed time = 0h 0m 0.836s, Peak memory usage = 463MB
 
 
 3. Resource Usage Summary
@@ -40,19 +40,19 @@
   --------------------------------------------------------------------------------
   Resources                   | Usage                               | Utilization
   --------------------------------------------------------------------------------
-  Logic                       | 0/20736                             |  0%
-    --LUT,ALU,ROM16           | 0(0 LUT, 0 ALU, 0 ROM16)            | -
+  Logic                       | 79/20736                            |  <1%
+    --LUT,ALU,ROM16           | 79(55 LUT, 24 ALU, 0 ROM16)         | -
     --SSRAM(RAM16)            | 0                                   | -
-  Register                    | 0/16173                             |  0%
-    --Logic Register as Latch | 0/15552                             |  0%
-    --Logic Register as FF    | 0/15552                             |  0%
-    --I/O Register as Latch   | 0/621                               |  0%
-    --I/O Register as FF      | 0/621                               |  0%
-  CLS                         | 0/10368                             |  0%
-  I/O Port                    | 4/207                               |  2%
-  I/O Buf                     | 3                                   | -
-    --Input Buf               | 0                                   | -
-    --Output Buf              | 3                                   | -
+  Register                    | 48/16173                            |  <1%
+    --Logic Register as Latch | 1/15552                             |  <1%
+    --Logic Register as FF    | 44/15552                            |  <1%
+    --I/O Register as Latch   | 1/621                               |  <1%
+    --I/O Register as FF      | 2/621                               |  <1%
+  CLS                         | 50/10368                            |  <1%
+  I/O Port                    | 6/207                               |  3%
+  I/O Buf                     | 5                                   | -
+    --Input Buf               | 1                                   | -
+    --Output Buf              | 4                                   | -
     --Inout Buf               | 0                                   | -
   ================================================================================
 
@@ -66,7 +66,7 @@
   bank 0   | 1/29        | 4%          
   bank 1   | 0/20        | 0%          
   bank 2   | 0/20        | 0%          
-  bank 3   | 3/32        | 10%         
+  bank 3   | 5/32        | 16%         
   bank 4   | 0/36        | 0%          
   bank 5   | 0/36        | 0%          
   bank 6   | 0/18        | 0%          
@@ -79,7 +79,7 @@
   ------------------------------------------
   Clock Resource| Usage         | Utilization 
   ------------------------------------------
-  PRIMARY       | 0/8           | 0%
+  PRIMARY       | 3/8           | 38%
   LW            | 0/8           | 0%
   GCLK_PIN      | 2/8           | 25%
   ==========================================
@@ -90,6 +90,9 @@
   -------------------------------------------
   Signal         | Global Clock   | Location
   -------------------------------------------
+  clk_d          | PRIMARY        |  TR BR
+  spi_master_inst/n87_3| PRIMARY        |  BR
+  spi_master_inst/n196_11| PRIMARY        |  BR
   ===========================================
 
 
@@ -99,9 +102,11 @@
 Port Name  | Diff Pair | Loc./Bank     | Constraint | Dir.  | Site     | IO Type    | Drive | Pull Mode | PCI Clamp | Hysteresis | Open Drain | Vref       | Single Resistor | Diff Resistor | BankVccio 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 clk        | -         | H11/0         | Y          | in    | IOT27[A] | LVCMOS18   | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8       
-spi_mosi   | -         | T7/3          | Y          | out   | IOR29[A] | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
-spi_clk    | -         | P6/3          | Y          | out   | IOR53[A] | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
-spi_ss     | -         | P8/3          | Y          | out   | IOR42[A] | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
+spi_miso   | -         | T7/3          | Y          | in    | IOR29[A] | LVCMOS18   | NA    | UP        | ON        | NONE       | NA         | NA         | OFF             | NA            | 1.8       
+spi_mosi   | -         | T8/3          | Y          | out   | IOR42[B] | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
+spi_clk    | -         | R8/3          | Y          | out   | IOR29[B] | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
+mosi_ss    | -         | P6/3          | Y          | out   | IOR53[A] | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
+miso_ss    | -         | T6/3          | Y          | out   | IOR53[B] | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
 ==================================================================================================================================================================================================================
 
 
@@ -290,8 +295,8 @@ A7/2     | -         | in    | IOR26[A] | LVCMOS18 | NA    | UP        | ON     
 A6/2     | -         | in    | IOR26[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 N10/2    | -         | in    | IOR27[A] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 M11/2    | -         | in    | IOR27[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
-T7/3     | spi_mosi  | out   | IOR29[A] | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
-R8/3     | -         | in    | IOR29[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
+T7/3     | spi_miso  | in    | IOR29[A] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | OFF             | NA            | 1.8  
+R8/3     | spi_clk   | out   | IOR29[B] | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
 M16/3    | -         | in    | IOR30[A] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 B16/3    | -         | in    | IOR30[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 C15/3    | -         | in    | IOR31[A] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
@@ -311,8 +316,8 @@ P9/3     | -         | in    | IOR38[B] | LVCMOS18 | NA    | UP        | ON     
 C10/3    | -         | in    | IOR39[A] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 N8/3     | -         | in    | IOR40[A] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 L9/3     | -         | in    | IOR40[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
-P8/3     | spi_ss    | out   | IOR42[A] | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
-T8/3     | -         | in    | IOR42[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
+P8/3     | -         | in    | IOR42[A] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
+T8/3     | spi_mosi  | out   | IOR42[B] | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
 M6/3     | -         | in    | IOR44[A] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 L8/3     | -         | in    | IOR44[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 M7/3     | -         | in    | IOR47[A] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
@@ -320,8 +325,8 @@ N7/3     | -         | in    | IOR47[B] | LVCMOS18 | NA    | UP        | ON     
 R7/3     | -         | in    | IOR49[A] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 P7/3     | -         | in    | IOR49[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 N6/3     | -         | in    | IOR51[A] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
-P6/3     | spi_clk   | out   | IOR53[A] | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
-T6/3     | -         | in    | IOR53[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
+P6/3     | mosi_ss   | out   | IOR53[A] | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
+T6/3     | miso_ss   | out   | IOR53[B] | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ======================================================================================================================================================================================
 

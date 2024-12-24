@@ -9,7 +9,7 @@
   "SubInsts" : [
    {
     "InstFile" : "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/top.v",
-    "InstLine" : 42,
+    "InstLine" : 44,
     "InstName" : "spi_master_inst",
     "ModuleFile" : "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/spi_master.v",
     "ModuleLine" : 1,

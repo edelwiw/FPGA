@@ -1,0 +1,62 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Tue Dec 24 05:25:59 2024
+[*]
+[dumpfile] "./out/top_tb.vcd"
+[dumpfile_mtime] "Tue Dec 24 05:24:21 2024"
+[dumpfile_size] 15000873
+[savefile] "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/gtk.gtkw"
+[timestart] 790300000
+[size] 1624 600
+[pos] -1 -1
+*-26.704527 1066200000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+[markername] AA
+[markername] BB
+[markername] CC
+[markername] DD
+[markername] EE
+[markername] FF
+[markername] GG
+[markername] HH
+[markername] II
+[markername] JJ
+[markername] KK
+[markername] LL
+[markername] MM
+[markername] NN
+[markername] OO
+[markername] PP
+[markername] QQ
+[markername] RR
+[markername] SS
+[markername] TT
+[markername] UU
+[markername] VV
+[markername] WW
+[markername] XX
+[markername] YY
+[markername] ZZ
+[treeopen] top_tb.
+[treeopen] top_tb.top_inst.
+[sst_width] 253
+[signals_width] 144
+[sst_expanded] 1
+[sst_vpaned_height] 151
+@28
+top_tb.top_inst.clk
+top_tb.top_inst.start_transfer
+top_tb.top_inst.spi_clk
+top_tb.top_inst.spi_miso
+top_tb.top_inst.spi_mosi
+@23
+top_tb.top_inst.spi_master_inst.tx_data_reg[7:0]
+@28
+top_tb.top_inst.miso_ss
+top_tb.top_inst.mosi_ss
+@200
+-
+@22
+top_tb.top_inst.DAC_value_reg[0:15]
+top_tb.top_inst.ADC_value_reg[0:15]
+[pattern_trace] 1
+[pattern_trace] 0

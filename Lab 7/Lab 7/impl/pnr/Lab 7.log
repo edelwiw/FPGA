@@ -7,6 +7,8 @@ Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
+WARN  (TA1132) :  'spi_master_inst/n87_3' was determined to be a clock but was not created.
+WARN  (TA1132) :  'spi_master_inst/n196_11' was determined to be a clock but was not created.
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -25,5 +27,5 @@ Generate file "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/impl/pnr/Lab 7.pin
 Generate file "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/impl/pnr/Lab 7.rpt.html" completed
 Generate file "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/impl/pnr/Lab 7.rpt.txt" completed
 Generate file "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/impl/pnr/Lab 7.tr.html" completed
-Mon Dec 23 02:10:13 2024
+Tue Dec 24 08:44:34 2024
 

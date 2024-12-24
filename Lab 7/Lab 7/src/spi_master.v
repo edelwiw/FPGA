@@ -1,7 +1,7 @@
 module spi_master(
     input wire clk, 
-    input wire [7:0] tx_data_reg, 
-    output reg [7:0] rx_data_reg,
+    input wire [0:7] tx_data_reg, 
+    output reg [0:7] rx_data_reg,
     input wire start_transfer,
     output wire spi_mosi, 
     input wire spi_miso,
@@ -56,8 +56,8 @@ always @(*) begin
     case(fsm_state)
         TRANSFER: fsm_next_state = current_bit_index == 8 ? DONE : TRANSFER;
         IDLE: fsm_next_state = start_transfer ? TRANSFER : IDLE;
-        // DONE: fsm_next_state = IDLE;
-        DONE: fsm_next_state = ~start_transfer ? IDLE : DONE;
+        DONE: fsm_next_state = IDLE;
+        // DONE: fsm_next_state = ~start_transfer ? IDLE : DONE;
         default: fsm_next_state = IDLE;
     endcase
 end
@@ -66,7 +66,7 @@ always @(posedge clk) begin
    fsm_state <= fsm_next_state;
 end
 
-assign spi_mosi = fsm_state == TRANSFER && current_bit_index != 8 ? current_bit_sample : 1'b0;
+assign spi_mosi = fsm_state == TRANSFER && current_bit_index != 8 ? current_bit_sample : spi_mosi;
 assign done = fsm_state == DONE;
 
 
@@ -87,7 +87,7 @@ always @(posedge clk) begin
 end
 
 // SPI MISO 
-reg [7:0] input_register;
+reg [0:7] input_register;
 always @(*) begin
     if(fsm_state == TRANSFER && spi_clock_timer_reg == SPI_CLOCK_TIMER_VALUE) // read bit (at rising edge of spi_clk)
         input_register[current_bit_index] = spi_miso;
@@ -95,7 +95,7 @@ end
 
 always @(posedge clk) begin
     case(fsm_state)
-        TRANSFER: rx_data_reg <= 8'h00;
+        TRANSFER: rx_data_reg <= rx_data_reg;
         default: rx_data_reg <= input_register;
     endcase
 end
