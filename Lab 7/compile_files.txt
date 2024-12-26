@@ -1,2 +1,4 @@
 Lab 7/src/top.v 
 Lab 7/src/spi_master.v
+Lab 7/src/uart_tx.v
+Lab 7/src/cordic/cordic.vo

@@ -9,11 +9,27 @@
   "SubInsts" : [
    {
     "InstFile" : "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/top.v",
-    "InstLine" : 44,
+    "InstLine" : 157,
+    "InstName" : "cordic_inst",
+    "ModuleFile" : "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/cordic/cordic.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "CORDIC_Top"
+   },
+   {
+    "InstFile" : "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/top.v",
+    "InstLine" : 45,
     "InstName" : "spi_master_inst",
     "ModuleFile" : "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/spi_master.v",
     "ModuleLine" : 1,
     "ModuleName" : "spi_master"
+   },
+   {
+    "InstFile" : "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/top.v",
+    "InstLine" : 196,
+    "InstName" : "uart_tx_inst",
+    "ModuleFile" : "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/uart_tx.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "uart_tx"
    }
   ]
  }

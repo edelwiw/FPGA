@@ -89,7 +89,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Tue Dec 24 08:44:34 2024
+<td>Thu Dec 26 09:41:46 2024
 </td>
 </tr>
 <tr>
@@ -161,22 +161,22 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Total Power (mW)</td>
-<td>122.471</td>
+<td>124.510</td>
 </tr>
 <tr>
 <td class="label">Quiescent Power (mW)</td>
-<td>121.198</td>
+<td>121.192</td>
 </tr>
 <tr>
 <td class="label">Dynamic Power (mW)</td>
-<td>1.272</td>
+<td>3.317</td>
 </tr>
 </table>
 <h2><a name="Thermal_Info">Thermal Information:</a></h2>
 <table class="summary_table">
 <tr>
 <td class="label">Junction Temperature</td>
-<td>28.922</td>
+<td>28.987</td>
 </tr>
 <tr>
 <td class="label">Theta JA</td>
@@ -184,7 +184,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Max Allowed Ambient Temperature</td>
-<td>81.078</td>
+<td>81.013</td>
 </tr>
 </table>
 <h2><a name="Supply_Summary">Supply Information:</a></h2>
@@ -199,23 +199,23 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td>VCC</td>
 <td>1.000</td>
-<td>0.304</td>
-<td>69.994</td>
-<td>70.299</td>
+<td>2.069</td>
+<td>69.993</td>
+<td>72.062</td>
 </tr>
 <tr>
 <td>VCCX</td>
 <td>3.300</td>
-<td>0.190</td>
+<td>0.245</td>
 <td>15.000</td>
-<td>50.128</td>
+<td>50.310</td>
 </tr>
 <tr>
 <td>VCCIO18</td>
 <td>1.800</td>
-<td>0.189</td>
-<td>0.947</td>
-<td>2.044</td>
+<td>0.244</td>
+<td>0.944</td>
+<td>2.138</td>
 </tr>
 </table>
 <h1><a name="Detail">Power Details</a></h1>
@@ -229,15 +229,15 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td>Logic</td>
-<td>0.097</td>
+<td>1.793</td>
 <td>NA</td>
-<td>6.952</td>
+<td>3.789</td>
 </tr>
 <tr>
 <td>IO</td>
-<td>3.712
-<td>2.553
-<td>9.925
+<td>4.292
+<td>2.799
+<td>9.357
 </tr>
 </table>
 <h2><a name="By_Hierarchy">Power By Hierarchy:</a></h2>
@@ -249,12 +249,88 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td>top</td>
-<td>0.097</td>
-<td>0.097(0.057)</td>
+<td>1.793</td>
+<td>1.793(1.675)</td>
+<tr>
+<td>top/cordic_inst/</td>
+<td>1.562</td>
+<td>1.562(1.562)</td>
+<tr>
+<td>top/cordic_inst/u_cordic/</td>
+<td>1.562</td>
+<td>1.562(1.562)</td>
+<tr>
+<td>top/cordic_inst/u_cordic/[0].U/</td>
+<td>0.106</td>
+<td>0.106(0.000)</td>
+<tr>
+<td>top/cordic_inst/u_cordic/[10].U/</td>
+<td>0.102</td>
+<td>0.102(0.000)</td>
+<tr>
+<td>top/cordic_inst/u_cordic/[11].U/</td>
+<td>0.104</td>
+<td>0.104(0.000)</td>
+<tr>
+<td>top/cordic_inst/u_cordic/[12].U/</td>
+<td>0.106</td>
+<td>0.106(0.000)</td>
+<tr>
+<td>top/cordic_inst/u_cordic/[13].U/</td>
+<td>0.108</td>
+<td>0.108(0.000)</td>
+<tr>
+<td>top/cordic_inst/u_cordic/[14].U/</td>
+<td>0.072</td>
+<td>0.072(0.000)</td>
+<tr>
+<td>top/cordic_inst/u_cordic/[15].U/</td>
+<td>0.035</td>
+<td>0.035(0.000)</td>
+<tr>
+<td>top/cordic_inst/u_cordic/[1].U/</td>
+<td>0.113</td>
+<td>0.113(0.000)</td>
+<tr>
+<td>top/cordic_inst/u_cordic/[2].U/</td>
+<td>0.113</td>
+<td>0.113(0.000)</td>
+<tr>
+<td>top/cordic_inst/u_cordic/[3].U/</td>
+<td>0.113</td>
+<td>0.113(0.000)</td>
+<tr>
+<td>top/cordic_inst/u_cordic/[4].U/</td>
+<td>0.112</td>
+<td>0.112(0.000)</td>
+<tr>
+<td>top/cordic_inst/u_cordic/[5].U/</td>
+<td>0.091</td>
+<td>0.091(0.000)</td>
+<tr>
+<td>top/cordic_inst/u_cordic/[6].U/</td>
+<td>0.093</td>
+<td>0.093(0.000)</td>
+<tr>
+<td>top/cordic_inst/u_cordic/[7].U/</td>
+<td>0.096</td>
+<td>0.096(0.000)</td>
+<tr>
+<td>top/cordic_inst/u_cordic/[8].U/</td>
+<td>0.098</td>
+<td>0.098(0.000)</td>
+<tr>
+<td>top/cordic_inst/u_cordic/[9].U/</td>
+<td>0.100</td>
+<td>0.100(0.000)</td>
 <tr>
 <td>top/spi_master_inst/</td>
-<td>0.057</td>
-<td>0.057(0.000)</td>
+<td>0.089</td>
+<td>0.089(0.000)</td>
+<tr>
+<td>top/uart_tx_inst/</td>
+<td>0.024</td>
+<td>0.024(0.000)</td>
 </table>
 <h2><a name="By_Clock_Domain">Power By Clock Domain:</a></h2>
 <table class="detail_table">
@@ -266,17 +342,27 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td>clk</td>
 <td>27.000</td>
-<td>0.084</td>
+<td>1.760</td>
 </tr>
 <tr>
-<td>spi_master_inst/n87_3</td>
+<td>n228_13</td>
+<td>100.000</td>
+<td>0.016</td>
+</tr>
+<tr>
+<td>spi_master_inst/n102_3</td>
 <td>100.000</td>
 <td>0.015</td>
 </tr>
 <tr>
-<td>spi_master_inst/n196_11</td>
+<td>spi_master_inst/n213_15</td>
 <td>100.000</td>
 <td>0.015</td>
+</tr>
+<tr>
+<td>spi_master_inst/n145_6</td>
+<td>100.000</td>
+<td>0.017</td>
 </tr>
 </table>
 </div><!-- content -->

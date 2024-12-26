@@ -6,6 +6,8 @@
     <FileList>
         <File path="/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/spi_master.v" type="verilog"/>
         <File path="/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/top.v" type="verilog"/>
+        <File path="/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/uart_tx.v" type="verilog"/>
+        <File path="/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/cordic/cordic.v" type="verilog"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="0"/>

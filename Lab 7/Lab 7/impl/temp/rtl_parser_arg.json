@@ -8,6 +8,14 @@
   {
    "Path" : "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/top.v",
    "Type" : "verilog"
+  },
+  {
+   "Path" : "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/uart_tx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/cordic/cordic.v",
+   "Type" : "verilog"
   }
  ],
  "IncludePath" : [
