@@ -12,27 +12,27 @@
   <Part Number>: GW2A-LV18PG256C8/I7
   <Device>: GW2A-18
   <Device Version>: C
-  <Created Time>:Thu Dec 26 09:41:46 2024
+  <Created Time>:Thu Dec 26 14:21:37 2024
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 0.054s, Elapsed time = 0h 0m 0.054s
-    Placement Phase 1: CPU time = 0h 0m 0.225s, Elapsed time = 0h 0m 0.218s
-    Placement Phase 2: CPU time = 0h 0m 0.096s, Elapsed time = 0h 0m 0.089s
-    Placement Phase 3: CPU time = 0h 0m 0.676s, Elapsed time = 0h 0m 0.632s
-    Total Placement: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 0.993s
+    Placement Phase 0: CPU time = 0h 0m 0.023s, Elapsed time = 0h 0m 0.02s
+    Placement Phase 1: CPU time = 0h 0m 0.135s, Elapsed time = 0h 0m 0.175s
+    Placement Phase 2: CPU time = 0h 0m 0.067s, Elapsed time = 0h 0m 0.078s
+    Placement Phase 3: CPU time = 0h 0m 0.325s, Elapsed time = 0h 0m 0.3s
+    Total Placement: CPU time = 0h 0m 0.55s, Elapsed time = 0h 0m 0.573s
  Running routing:
     Routing Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Routing Phase 1: CPU time = 0h 0m 0.112s, Elapsed time = 0h 0m 0.116s
-    Routing Phase 2: CPU time = 0h 0m 0.77s, Elapsed time = 0h 0m 0.734s
+    Routing Phase 1: CPU time = 0h 0m 0.058s, Elapsed time = 0h 0m 0.062s
+    Routing Phase 2: CPU time = 0h 0m 0.345s, Elapsed time = 0h 0m 0.325s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 0.882s, Elapsed time = 0h 0m 0.85s
+    Total Routing: CPU time = 0h 0m 0.403s, Elapsed time = 0h 0m 0.387s
  Generate output files:
-    CPU time = 0h 0m 1s, Elapsed time = 0h 0m 0.996s
+    CPU time = 0h 0m 0.417s, Elapsed time = 0h 0m 0.408s
 
- Total Time and Memory Usage: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s, Peak memory usage = 506MB
+ Total Time and Memory Usage: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s, Peak memory usage = 509MB
 
 
 3. Resource Usage Summary
@@ -40,15 +40,15 @@
   --------------------------------------------------------------------------------
   Resources                   | Usage                               | Utilization
   --------------------------------------------------------------------------------
-  Logic                       | 975/20736                           |  5%
-    --LUT,ALU,ROM16           | 975(149 LUT, 826 ALU, 0 ROM16)      | -
+  Logic                       | 978/20736                           |  5%
+    --LUT,ALU,ROM16           | 978(155 LUT, 823 ALU, 0 ROM16)      | -
     --SSRAM(RAM16)            | 0                                   | -
-  Register                    | 884/16173                           |  6%
-    --Logic Register as Latch | 8/15552                             |  <1%
-    --Logic Register as FF    | 873/15552                           |  6%
+  Register                    | 898/16173                           |  6%
+    --Logic Register as Latch | 12/15552                            |  <1%
+    --Logic Register as FF    | 883/15552                           |  6%
     --I/O Register as Latch   | 1/621                               |  <1%
     --I/O Register as FF      | 2/621                               |  <1%
-  CLS                         | 559/10368                           |  6%
+  CLS                         | 570/10368                           |  6%
   I/O Port                    | 7/207                               |  4%
   I/O Buf                     | 7                                   | -
     --Input Buf               | 2                                   | -
@@ -91,9 +91,9 @@
   Signal         | Global Clock   | Location
   -------------------------------------------
   clk_d          | PRIMARY        |  TR BR
-  spi_master_inst/n213_15| PRIMARY        |  TR BR
-  spi_master_inst/n145_6| PRIMARY        |  TR
-  n228_13        | LW             |  -
+  spi_master_inst/n213_19| PRIMARY        |  TR BR
+  spi_master_inst/n145_8| PRIMARY        |  TR
+  n219_13        | LW             |  -
   spi_master_inst/n102_3| LW             |  -
   ===========================================
 

@@ -12,7 +12,7 @@ module top(
 localparam CLOCK_FREQ = 27_000_000; // main clock frequency is 27Mhz
 
 // clock source 
-localparam ms_period = 0.05; // 1ms
+localparam ms_period = 0.005; // 1ms
 localparam MS_TIMER_VALUE = CLOCK_FREQ * ms_period; // the number of clocks needed to time 1ms 
 localparam MS_TIMER_LEN = $clog2($rtoi(MS_TIMER_VALUE)); 
 reg [MS_TIMER_LEN - 1:0] ms_timer_reg = {MS_TIMER_LEN{1'b0}};
@@ -142,14 +142,34 @@ reg[16:0] yi = 17'd0; // TODO: maybe 1
 reg[16:0] theta = 17'd0;    
 wire[16:0] sin_theta;
 
-localparam theta_end = 17'd51445; // TODO 
+localparam theta_end = 51444; // TODO 
+
+reg theta_dir = 1'b0; // 0 - positive, 1 - negative
+
+// always @(posedge clk) begin 
+//     if(ms_timer_reg == MS_TIMER_VALUE) begin 
+//         if(theta < theta_end) begin 
+//             theta <= theta + 30;
+//         end else begin 
+//             theta <= 0;
+//         end
+//     end
+// end
 
 always @(posedge clk) begin 
     if(ms_timer_reg == MS_TIMER_VALUE) begin 
-        if(theta < theta_end) begin 
-            theta <= theta + 1;
+        if(theta_dir == 0) begin 
+            if(theta < theta_end) begin 
+                theta <= theta + 50;
+            end else begin 
+                theta_dir <= 1;
+            end
         end else begin 
-            theta <= 0;
+            if(theta > 0) begin 
+                theta <= theta - 50;
+            end else begin 
+                theta_dir <= 0;
+            end
         end
     end
 end
@@ -181,8 +201,8 @@ reg [2:0] uart_byte_num = 0;
 always @(posedge clk) begin 
     case(uart_byte_num) 
         3'b000: uart_buffer <= 8'hA9;
-        3'b001: uart_buffer <= ADC_value_reg[8:15] & 8'h0F;
-        3'b010: uart_buffer <= ADC_value_reg[0:7] & 8'h0F;
+        3'b001: uart_buffer <= ADC_value_reg[8:15] & 8'hFF;
+        3'b010: uart_buffer <= ADC_value_reg[0:7] & 8'hFF;
         3'b011: uart_buffer <= 8'h91;
     endcase
 end

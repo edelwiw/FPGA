@@ -4,10 +4,10 @@
     <Version>beta</Version>
     <Device id="GW2A-18C" package="PBGA256" speed="8" partNumber="GW2A-LV18PG256C8/I7"/>
     <FileList>
+        <File path="/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/cordic/cordic.v" type="verilog"/>
         <File path="/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/spi_master.v" type="verilog"/>
         <File path="/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/top.v" type="verilog"/>
         <File path="/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/uart_tx.v" type="verilog"/>
-        <File path="/Users/alexivanov/Desktop/UNI/FPGA/Lab 7/Lab 7/src/cordic/cordic.v" type="verilog"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="0"/>

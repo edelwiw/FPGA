@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="top" Register="832" Alu="758" Lut="85" T_Register="884(832)" T_Alu="776(758)" T_Lut="150(85)">
- <SubModule name="spi_master_inst" Register="29" Alu="11" Lut="38" T_Register="29(29)" T_Alu="11(11)" T_Lut="38(38)"/>
+<Module name="top" Register="838" Alu="755" Lut="90" T_Register="898(838)" T_Alu="773(755)" T_Lut="157(90)">
+ <SubModule name="spi_master_inst" Register="37" Alu="11" Lut="40" T_Register="37(37)" T_Alu="11(11)" T_Lut="40(40)"/>
  <SubModule name="uart_tx_inst" Register="23" Alu="7" Lut="27" T_Register="23(23)" T_Alu="7(7)" T_Lut="27(27)"/>
 </Module>

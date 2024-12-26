@@ -2,11 +2,11 @@
  "Device" : "GW2A-18C",
  "Files" : [
   {
-   "Path" : "/Users/alexivanov/Documents/GOWIN/Lab5/Lab5/src/shifter.v",
+   "Path" : "/Users/alexivanov/Desktop/UNI/FPGA/Lab 5/Lab5/src/shifter.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "/Users/alexivanov/Documents/GOWIN/Lab5/Lab5/src/top.v",
+   "Path" : "/Users/alexivanov/Desktop/UNI/FPGA/Lab 5/Lab5/src/top.v",
    "Type" : "verilog"
   }
  ],
@@ -14,7 +14,7 @@
 
  ],
  "LoopLimit" : 2000,
- "ResultFile" : "/Users/alexivanov/Documents/GOWIN/Lab5/Lab5/impl/temp/rtl_parser.result",
+ "ResultFile" : "/Users/alexivanov/Desktop/UNI/FPGA/Lab 5/Lab5/impl/temp/rtl_parser.result",
  "Top" : "",
  "VerilogStd" : "verilog_2001",
  "VhdlStd" : "vhdl_93"

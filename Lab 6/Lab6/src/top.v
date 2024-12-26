@@ -82,7 +82,7 @@ parameter sending_first_byte = 1;
 parameter sending_second_byte = 2;
 parameter sent = 3;
 
-reg [0:63] display_buffer = 64'h0102030405060708;
+reg [0:63] display_buffer;
 reg [3:0] display_index = 0;
 
 reg [0:7] send_buffer = 0; 

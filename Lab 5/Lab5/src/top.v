@@ -12,10 +12,10 @@ parameter spi_timer_val = 54; // The number of times needed to frequency
 reg [19:0] spi_timer; // counter_value
 reg spi_clk = 1; // spi clock signal  
 
-parameter second = 27_000_000 / 10; // 0.1 second
+parameter second = 27_000_000; // 0.1 second
 reg [31:0] second_timer = 0; // 1 second counter
 reg sec_clk = 1; // 1 second clock signal
-reg [31:0] timer = 12345; 
+reg [31:0] timer = 0; 
 
 parameter ms_timer_value = 27_000; 
 reg [14:0] ms_timer = 0; 
@@ -104,8 +104,9 @@ shifter shifter_instance(
 
 always @(posedge clk) begin 
     if(ms_timer == 0) begin 
-        send_buffer <= ((1 << display_index)) | ((~(display_buffer >> ((7 - display_index) * 8))) << 8);
-        // send_buffer <= (~(1 << display_index)) | (((display_buffer >> ((7 - display_index) * 8))) << 8);
+//        send_buffer <= ((1 << display_index)) | ((~(display_buffer >> ((7 - display_index) * 8))) << 8);
+//         send_buffer <= ((~(1 << display_index)) & 8'hFF) | (((display_buffer >> ((7 - display_index) * 8))) << 8);
+        send_buffer <=  (((display_buffer >> ((7 - display_index) * 8)) & 8'hff) << 8) | ((~(1 << display_index)) & 8'hFF);
         start_transfer <= 1;
         display_index = (display_index + 1) % 8;
     end else if (busy == 1) begin

@@ -1,12 +1,6 @@
-**** module/scope: task6_top
-     Flip-Flops   : 1
-     Logic Gates  : 5
-     MUX[2]: 1 slices
-     LOG[13]: 1 unaccounted
-     LOG[14]: 1 unaccounted
+**** module/scope: task2_top
+     Flip-Flops   : 0
+     Logic Gates  : 19
 **** TOTALS
-     Flip-Flops   : 1
-     Logic Gates  : 5
-     MUX[2]: 1 slices
-     LOG[13]: 1 unaccounted
-     LOG[14]: 1 unaccounted
+     Flip-Flops   : 0
+     Logic Gates  : 19

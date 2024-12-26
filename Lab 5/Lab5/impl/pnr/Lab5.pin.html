@@ -50,11 +50,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Design File</td>
-<td>/Users/alexivanov/Documents/GOWIN/Lab5/Lab5/impl/gwsynthesis/Lab5.vg</td>
+<td>/Users/alexivanov/Desktop/UNI/FPGA/Lab 5/Lab5/impl/gwsynthesis/Lab5.vg</td>
 </tr>
 <tr>
 <td class="label">Physical Constraints File</td>
-<td>/Users/alexivanov/Documents/GOWIN/Lab5/Lab5/src/Lab5.cst</td>
+<td>/Users/alexivanov/Desktop/UNI/FPGA/Lab 5/Lab5/src/Lab5.cst</td>
 </tr>
 <tr>
 <td class="label">Timing Constraints File</td>
@@ -78,7 +78,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Sun Dec 22 19:31:07 2024
+<td>Thu Dec 26 14:07:01 2024
 </td>
 </tr>
 <tr>
@@ -128,10 +128,10 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td class="label">data_out</td>
 <td>-</td>
-<td>T7/3</td>
+<td>B14/7</td>
 <td>Y</td>
 <td>out</td>
-<td>IOR29[A]</td>
+<td>IOL2[A]</td>
 <td>LVCMOS18</td>
 <td>8</td>
 <td>UP</td>
@@ -146,10 +146,10 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td class="label">clk_out</td>
 <td>-</td>
-<td>T9/3</td>
+<td>B12/7</td>
 <td>Y</td>
 <td>out</td>
-<td>IOR38[A]</td>
+<td>IOL7[B]</td>
 <td>LVCMOS18</td>
 <td>8</td>
 <td>UP</td>
@@ -164,10 +164,10 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td class="label">latch</td>
 <td>-</td>
-<td>P9/3</td>
+<td>A11/7</td>
 <td>Y</td>
 <td>out</td>
-<td>IOR38[B]</td>
+<td>IOL15[A]</td>
 <td>LVCMOS18</td>
 <td>8</td>
 <td>UP</td>
@@ -2137,17 +2137,17 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">B14/7</td>
-<td>-</td>
-<td>in</td>
+<td>data_out</td>
+<td>out</td>
 <td>IOL2[A]</td>
 <td>LVCMOS18</td>
-<td>NA</td>
+<td>8</td>
 <td>UP</td>
-<td>ON</td>
-<td>NONE</td>
 <td>NA</td>
 <td>NA</td>
+<td>OFF</td>
 <td>NA</td>
+<td>OFF</td>
 <td>NA</td>
 <td>1.8</td>
 </tr>
@@ -2185,17 +2185,17 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">B12/7</td>
-<td>-</td>
-<td>in</td>
+<td>clk_out</td>
+<td>out</td>
 <td>IOL7[B]</td>
 <td>LVCMOS18</td>
-<td>NA</td>
+<td>8</td>
 <td>UP</td>
-<td>ON</td>
-<td>NONE</td>
 <td>NA</td>
 <td>NA</td>
+<td>OFF</td>
 <td>NA</td>
+<td>OFF</td>
 <td>NA</td>
 <td>1.8</td>
 </tr>
@@ -2281,17 +2281,17 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">A11/7</td>
-<td>-</td>
-<td>in</td>
+<td>latch</td>
+<td>out</td>
 <td>IOL15[A]</td>
 <td>LVCMOS18</td>
-<td>NA</td>
+<td>8</td>
 <td>UP</td>
-<td>ON</td>
-<td>NONE</td>
 <td>NA</td>
 <td>NA</td>
+<td>OFF</td>
 <td>NA</td>
+<td>OFF</td>
 <td>NA</td>
 <td>1.8</td>
 </tr>
@@ -3001,17 +3001,17 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">T7/3</td>
-<td>data_out</td>
-<td>out</td>
+<td>-</td>
+<td>in</td>
 <td>IOR29[A]</td>
 <td>LVCMOS18</td>
-<td>8</td>
+<td>NA</td>
 <td>UP</td>
+<td>ON</td>
+<td>NONE</td>
 <td>NA</td>
 <td>NA</td>
-<td>OFF</td>
 <td>NA</td>
-<td>OFF</td>
 <td>NA</td>
 <td>1.8</td>
 </tr>
@@ -3257,33 +3257,33 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">T9/3</td>
-<td>clk_out</td>
-<td>out</td>
+<td>-</td>
+<td>in</td>
 <td>IOR38[A]</td>
 <td>LVCMOS18</td>
-<td>8</td>
+<td>NA</td>
 <td>UP</td>
+<td>ON</td>
+<td>NONE</td>
 <td>NA</td>
 <td>NA</td>
-<td>OFF</td>
 <td>NA</td>
-<td>OFF</td>
 <td>NA</td>
 <td>1.8</td>
 </tr>
 <tr>
 <td class="label">P9/3</td>
-<td>latch</td>
-<td>out</td>
+<td>-</td>
+<td>in</td>
 <td>IOR38[B]</td>
 <td>LVCMOS18</td>
-<td>8</td>
+<td>NA</td>
 <td>UP</td>
+<td>ON</td>
+<td>NONE</td>
 <td>NA</td>
 <td>NA</td>
-<td>OFF</td>
 <td>NA</td>
-<td>OFF</td>
 <td>NA</td>
 <td>1.8</td>
 </tr>
