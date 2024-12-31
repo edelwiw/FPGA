@@ -17,8 +17,8 @@ reg [31:0] second_timer = 0; // 1 second counter
 reg sec_clk = 1; // 1 second clock signal
 reg [31:0] timer = 0; 
 
-parameter ms_timer_value = 27_000; 
-reg [14:0] ms_timer = 0; 
+parameter ms_timer_value = 27_000_000 / 1000; 
+reg [31:0] ms_timer = 0; 
 
 always @(posedge clk) begin
     if (spi_timer <= spi_timer_val) begin 
@@ -41,7 +41,7 @@ always @(posedge clk) begin
     if(ms_timer <= ms_timer_value) begin 
         ms_timer <= ms_timer + 1;
     end else begin 
-        ms_timer = 15'b0;
+        ms_timer = 32'b0;
     end
 
 end

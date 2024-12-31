@@ -4,7 +4,6 @@ Analyzing Verilog file '/Users/alexivanov/Desktop/UNI/FPGA/Lab 5/Lab5/src/shifte
 Analyzing Verilog file '/Users/alexivanov/Desktop/UNI/FPGA/Lab 5/Lab5/src/top.v'
 Compiling module 'top'("/Users/alexivanov/Desktop/UNI/FPGA/Lab 5/Lab5/src/top.v":1)
 Extracting RAM for identifier 'digits'("/Users/alexivanov/Desktop/UNI/FPGA/Lab 5/Lab5/src/top.v":63)
-WARN  (EX3791) : Expression size 16 truncated to fit in target size 15("/Users/alexivanov/Desktop/UNI/FPGA/Lab 5/Lab5/src/top.v":42)
 Compiling module 'shifter'("/Users/alexivanov/Desktop/UNI/FPGA/Lab 5/Lab5/src/shifter.v":1)
 WARN  (EX3791) : Expression size 6 truncated to fit in target size 5("/Users/alexivanov/Desktop/UNI/FPGA/Lab 5/Lab5/src/shifter.v":38)
 NOTE  (EX0101) : Current top module is "top"
